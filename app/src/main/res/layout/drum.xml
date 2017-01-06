@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cow Bell"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:onClick="boom"
+        android:id="@+id/boom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clap"
+        android:onClick="clap"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:id="@+id/clap"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/boom"
+        android:layout_toEndOf="@+id/boom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hihat"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:onClick="hihat"
+        android:id="@+id/hihat"
+        android:layout_alignTop="@+id/clap"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kick"
+        android:onClick="kick"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:id="@+id/kick"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/tom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crash"
+        android:onClick="ride"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:id="@+id/ride"
+        android:layout_below="@+id/openhat"
+        android:layout_toRightOf="@+id/openhat"
+        android:layout_toEndOf="@+id/openhat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snare"
+        android:onClick="snare"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:id="@+id/snare"
+        android:layout_alignTop="@+id/clap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:layout_height="wrap_content"
+        android:text="Maracas"
+        android:onClick="tom"
+        android:id="@+id/tom"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/openhat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rim Shot"
+
+
+        android:onClick="openhat"
+        android:id="@+id/openhat"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#00BCD4"
+        android:layout_above="@+id/boom"
+        android:layout_toLeftOf="@+id/tom"
+        android:layout_toStartOf="@+id/tom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PLAY DRUM"
+        android:textColor="#E0F7FA"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:textSize="50sp"
+        android:gravity="top"
+        android:textAlignment="center"
+        android:id="@+id/t"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp" />
+</RelativeLayout>
